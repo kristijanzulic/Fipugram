@@ -139,7 +139,7 @@ export default {
       const querySnapshot = query(
         collection(db, "objave"),
         orderBy("posted_at", "desc"),
-        limit(3)
+        limit(5)
       );
       getDocs(querySnapshot).then((querySnapshot) => {
         this.cards = [];
